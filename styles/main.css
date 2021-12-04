@@ -1,0 +1,96 @@
+*{
+    margin:0;
+}
+
+body {
+    background-color: rgb(3, 134, 137);
+}
+
+body > h1 {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1rem;
+    font-variant: small-caps;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body > h1 > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+body > h1 > a:hover {
+    text-decoration: underline;
+    text-decoration-skip: unset;
+}
+
+main {
+    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(255, 183, 0); */
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 5px;
+}
+
+p {
+    font-family: monospace, sans-serif;
+    font-size: 45px;
+    text-align: center;
+    background-color: #fff;
+    width: 336px;
+    height:80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-right: 3px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+button {
+    margin: 1px;
+    width: 80px;
+    height: 72px;
+    border-radius: 7px;
+    border: 1px;
+    outline: 0;
+    background-color: #333;
+    transition: 0.4s;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* padding: 5px; */
+}
+
+button#div,
+button#mul,
+button#sub,
+button#add {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover {
+    background-color: #33333366;
+}
+
+#button_equal {
+    height: 150px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+}
+
+#button_zero {
+    width: 166px;
+}

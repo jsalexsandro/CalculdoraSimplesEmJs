@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <h1>
+        Author: <a target="_blank" href="https://github.com/jsalexsandro/"> 
+            José Alexsandro
+        </a>
+    </h1>
+    <main>
+        <p id="textInput"></p>
+        <table>
+            <tr>
+                <td><button onclick="Calc.clear()">C</button></td>
+                <td><button onclick="Calc.remove()"><</button></td>
+                <td><button id="div" onclick="Calc.setMathOperationOfInput('÷')">÷</button></td>
+                <td><button id="mul" onclick="Calc.setMathOperationOfInput('×')">×</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="Calc.setOfInput('1')">1</button></td>
+                <td><button onclick="Calc.setOfInput('2')">2</button></td>
+                <td><button onclick="Calc.setOfInput('3')">3</button></td>
+                <td><button id="sub" onclick="Calc.setMathOperationOfInput('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="Calc.setOfInput('4')">4</button></td>
+                <td><button onclick="Calc.setOfInput('5')">5</button></td>
+                <td><button onclick="Calc.setOfInput('6')">6</button></td>
+                <td><button id="add" onclick="Calc.setMathOperationOfInput('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="Calc.setOfInput('7')">7</button></td>
+                <td><button onclick="Calc.setOfInput('8')">8</button></td>
+                <td><button onclick="Calc.setOfInput('9')">9</button></td>
+                <td rowspan="2"><button id="button_equal" onclick="Calc.run()">=</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="button_zero" onclick="Calc.setOfInput('0')">0</button></td>
+                <td><button onclick="Calc.setOfInput('.')">.</button></td>
+            </tr>
+        </table>
+    </main>
+    <script src="calc.js"></script>
+</body>
+</html>
